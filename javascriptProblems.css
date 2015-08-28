@@ -1,0 +1,98 @@
+h2{
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	margin-top: 125px;
+	text-align: center;
+}
+
+#navBG{
+	/*border: solid red 1px;*/
+	background-color: #3B3B3B;
+	height: 80px;
+}
+
+#navbar{
+	/*border: solid black 1px;*/
+	width: 500px;
+	padding: 0;
+}
+
+#navbar li{
+	/*border: solid black 1px;*/
+	padding: 10px;
+	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	box-sizing: border-box;
+	/*margin-left: 10px;*/
+}
+
+#navbar ul{
+	margin: 0;
+	max-width: 
+}
+
+#navbar ul li{
+	color: white;
+	margin-top: 28px;
+	margin-right: 0;
+}
+
+.nav{
+	/*line-height: 0%;*/
+}
+
+#compInfo{
+	/*border: solid red 2px;*/
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+
+#userInfo{
+	font-size: 1em;
+	text-align: right;
+	display: inline-block;
+}
+
+#userInfo li{
+	list-style-type: none;
+}
+
+form{
+	margin-top: 90px;
+	text-align: center;
+}
+
+form input{
+	display: inline-block;
+}
+
+footer{
+	background-color: #9C9C9C
+}
+
+#clockPlacement{
+	margin-top: 10px;
+	margin-right: 100px;
+	float: right;
+}
+
+#landingPage{
+	margin-top: 160px;
+	height: 100px;
+}
+
+#links a{
+	text-align: center;
+}
+#links a img{
+	margin-top: 35px;
+	margin-left: 25px;
+}
+
+footer a{
+	text-decoration: none;
+}
