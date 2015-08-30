@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-//********* Digital Clock *********//
+//********************* Digital Clock *********************//
 
 	function digitalClockExercise(){
 //The core of getting the Hours/Minuts/Seconds	
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	setInterval(digitalClockExercise,1000);
 
-//********* Javascript Problems *********//	
+//********************* Javascript Problems *********************//	
 
 //Setting Validations on Form Submission
 	var correctPass = '12345';
@@ -65,10 +65,21 @@ $(document).ready(function(){
 	var width = screen.width;
 	var height = screen.height;
 	var os = navigator.platform;
+	currentBrowser = navigator.userAgent;
 
 	$('#resolution').text(width + 'x' + height);
 
 	$('#operatingSystem').text(os);
+
+	if(currentBrowser.indexOf('Chrome') !== -1){
+		$('#browser').text('Chrome');
+	}else if(currentBrowser.indexOf('Safari') !== -1){
+		$('#browser').text('Safari');
+	}else if(currentBrowser.indexOf('Firefox') !== -1){
+		$('#browser').text('Firefox');
+	else{
+		$('#browser').text('Internet Explorer');
+	}
 	
 //Setting Animation and Effects on Nav Bar Icons
 
