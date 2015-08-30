@@ -61,7 +61,7 @@ $(document).ready(function(){
 	});
 
 
-//Setting the Screen Resolution and Native Operating System
+//Setting the Screen Resolution, Native Operating System, and Browser
 	var width = screen.width;
 	var height = screen.height;
 	var os = navigator.platform;
@@ -69,7 +69,7 @@ $(document).ready(function(){
 	$('#resolution').text(width + 'x' + height);
 
 	$('#operatingSystem').text(os);
-
+	
 //Setting Animation and Effects on Nav Bar Icons
 
 	$('.nav').mouseover(function(){
