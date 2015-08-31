@@ -62,24 +62,29 @@ $(document).ready(function(){
 
 
 //Setting the Screen Resolution, Native Operating System, and Browser
-	var width = screen.width;
-	var height = screen.height;
+	var width = $(window).width();
+	var height = $(window).height();
 	var os = navigator.platform;
-	currentBrowser = navigator.userAgent;
+	var currentBrowser = navigator.userAgent;
 
 	$('#resolution').text(width + 'x' + height);
+
+	$( window ).resize(function() {
+  	$('#resolution').text($(window).width() + 'x' + $(window).height());
+	});
 
 	$('#operatingSystem').text(os);
 
 	if(currentBrowser.indexOf('Chrome') !== -1){
 		$('#browser').text('Chrome');
-	}else if(currentBrowser.indexOf('Safari') !== -1){
+	}else if (currentBrowser.indexOf('Safari') !== -1){
 		$('#browser').text('Safari');
-	}else if(currentBrowser.indexOf('Firefox') !== -1){
+	}else if (currentBrowser.indexOf('Mozilla') !== -1){
 		$('#browser').text('Firefox');
-	else{
+	}else{
 		$('#browser').text('Internet Explorer');
 	}
+
 	
 //Setting Animation and Effects on Nav Bar Icons
 
